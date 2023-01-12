@@ -1,0 +1,736 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+
+<body><pre>CSS Backgrounds
+    ==============
+    background-color
+        background-color: lightblue;
+    background-image
+        background-image: url("paper.gif");
+    background-repeat
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: no-repeat;
+    background-position
+        background-position: right top;
+    background-attachment
+        background-attachment: fixed;
+    Background - Shorthand property
+        background: #ffffff url("img_tree.png") no-repeat right top;
+    
+    
+    background-position:
+    
+    left top
+    left center
+    left bottom
+    right top
+    right center
+    right bottom
+    center top
+    center center
+    center bottom
+    50% 50%
+    25% 75%
+    10px 200px
+    50px 50px
+    initial
+    -----------------------------------------------------------------------------------
+    CSS Borders
+    ==========
+    border-style
+        border-style: dotted;
+        border-style: dashed;
+        border-style: solid;
+        border-style: double;
+        border-style: groove;
+        border-style: ridge;
+        border-style: inset;
+        border-style: outset;
+        border-style: none;
+        border-style: hidden;
+    Border Width
+        border-width: 5px;
+        border-width: medium;
+        border-width: 2px 10px 4px 20px;
+        border-width: 2px 10px 4px;
+        border-width: 2px 10px;
+    Border Color
+        border-color: red;
+        border-color: red green blue yellow;
+        border-color: red green blue;
+        border-color: red green;
+        
+    Border - Individual Sides
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style: solid;
+            
+            border-top-style: red;
+            border-right-style: green;
+            border-bottom-style: blue;
+            border-left-style: lime;
+        
+            border-top-style: 12px;
+            border-right-style: 15px;
+            border-bottom-style: 10px;
+            border-left-style: 70px;
+        
+    Border - Shorthand Property
+            border: 5px solid red;
+            border-left: 6px solid red;
+            border-bottom: 6px solid red;
+    
+    Rounded Borders
+        border-radius
+            border-radius: 5px;
+    -------------------------------------------------------------------------------
+    CSS Margins
+    ===========
+    margin-top
+        margin-top: 100px;
+    margin-right
+        margin-bottom: 100px;
+    margin-bottom
+        margin-right: 150px;
+    margin-left
+        margin-left: 80px;
+    Margin - Shorthand Property
+        margin: 100px 150px 100px 80px;
+        margin: 100px 150px 100px;
+        margin: 100px 150px;
+        margin: 100px;
+    
+    The inherit Value
+        div.container {
+            border: 1px solid red;
+            margin-left: 100px;
+        }
+        p.one {
+            margin-left: inherit;
+        }
+    
+    Margin Collapse
+        margin: 0 0 50px 0;
+        margin: 20px 0 0 0;
+    ------------------------------------------------------------------------------------
+    CSS Padding
+    ===========
+    padding-top
+        padding-top: 50px;
+    padding-right
+        padding-right: 50px;
+    padding-bottom
+        padding-bottom: 50px;
+    padding-left
+        padding-left: 50px;
+        
+    Padding Shorthand Property
+        padding: 50px 30px 50px 80px;
+        padding: 50px 30px 50px;
+        padding: 50px 30px;
+        padding: 50px;
+    -----------------------------------------------------------------------------------------
+    CSS Height and Width
+    ====================
+        height: 200px;
+        width: 50%;
+        max-width: 500px;
+    ------------------------------------------------------------------------------------------
+    The CSS Box Model
+    ==================
+    
+        width: 300px;
+        border: 25px solid green;
+        padding: 25px;
+        margin: 25px;
+        
+        
+        
+        width: 320px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 0; 
+        
+        
+        320px (width)
+        + 20px (left + right padding)
+        + 10px (left + right border)
+        + 0px (left + right margin)
+        = 350px
+        
+    --------------------------------------------------------------------------------------------	
+    Outline Style
+    =============
+    p.dotted {outline-style: dotted;}
+    p.dashed {outline-style: dashed;}
+    p.solid  {outline-style: solid;}
+    p.double {outline-style: double;}
+    p.groove {outline-style: groove;}
+    p.ridge  {outline-style: ridge;}
+    p.inset  {outline-style: inset;}
+    p.outset {outline-style: outset;}
+    
+    Outline - Shorthand property
+        outline-width
+        outline-style (required)
+        outline-color
+        
+        outline: 5px dotted red;
+        
+    --------------------------------------------------------------------------------------------	
+    CSS Text
+    ========
+        Text Color
+            color: blue;
+        Text Alignment
+            text-align: center;
+            text-align: left;
+            text-align: right;
+            text-align: justify;
+        Text Decoration
+            text-decoration: none;
+            text-decoration: overline;
+            text-decoration: line-through;
+            text-decoration: underline;
+        Text Transformation
+            text-transform: uppercase;
+            text-transform: lowercase;
+            text-transform: capitalize;
+        Text Indentation
+            text-indent: 50px;
+        Letter Spacing
+            letter-spacing: 3px;
+            letter-spacing: -3px;
+        Line Height
+            line-height: 0.8;
+            line-height: 1.8;
+        Text Direction
+            direction: rtl;
+            direction: ltr;		
+        Word Spacing
+            word-spacing: 10px;
+            word-spacing: -5px;
+    -------------------------------------------------------------------------------------------------
+    CSS Fonts
+    =========
+        CSS Font Families
+            In CSS, there are two types of font family names:
+        generic family - a group of font families with a similar look (like "Serif" or "Monospace")
+        font family - a specific font family (like "Times New Roman" or "Arial")
+    
+    Generic family :- Font family :- Description
+    1. Serif :-Times New Roman,Georgia :-Serif fonts have small lines at the ends on some characters
+    
+    2. Sans-serif :- Arial Verdana	:- "Sans" means without - these fonts do not have the lines at the 	ends of characters
+    
+    3. Monospace :-Courier New Lucida Console :- All monospace characters have the same width
+    
+    Font Family
+    -----------
+        font-family: "Times New Roman", Times, serif;
+    
+    Font Style
+    -----------
+        font-style: normal;
+        font-style: italic;
+        font-style: oblique;
+        
+    Font Size
+    ----------
+        font-size: 40px;
+    
+    Set Font Size With Em
+    ---------------------
+        font-size: 2.5em; /* 40px/16=2.5em */
+        font-size: 1.875em; /* 30px/16=1.875em */
+        font-size: 0.875em; /* 14px/16=0.875em */
+    
+    Use a Combination of Percent and Em
+    ------------------------------------
+        font-size: 100%;
+        font-size: 2.5em;
+        font-size: 0.875em;
+    
+    Font Weight
+    -----------
+        font-weight: normal;
+        font-weight: bold;
+    
+    Font Variant
+    ------------
+        font-variant: normal;
+        font-variant: small-caps;
+    -------------------------------------------------------------------------------------------------
+    CSS Icons
+    =========
+    Font Awesome Icons
+        &lt;link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"&gt;
+        
+            &lt;i class="fa fa-cloud"&gt;&lt;/i&gt;
+            &lt;i class="fa fa-heart"&gt;&lt;/i&gt;
+            &lt;i class="fa fa-car"&gt;&lt;/i&gt;
+            &lt;i class="fa fa-file"&gt;&lt;/i&gt;
+            &lt;i class="fa fa-bars"&gt;&lt;/i&gt;
+        
+    Bootstrap Icons
+        &lt;link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;
+        
+        &lt;i class="glyphicon glyphicon-cloud"&gt;&lt;/i&gt;
+        &lt;i class="glyphicon glyphicon-remove"&gt;&lt;/i&gt;
+        &lt;i class="glyphicon glyphicon-user"&gt;&lt;/i&gt;
+        &lt;i class="glyphicon glyphicon-envelope"&gt;&lt;/i&gt;
+        &lt;i class="glyphicon glyphicon-thumbs-up"&gt;&lt;/i&gt;
+        
+    Google Icons
+        &lt;link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;
+        &lt;i class="material-icons"&gt;cloud&lt;/i&gt;
+        &lt;i class="material-icons"&gt;favorite&lt;/i&gt;
+        &lt;i class="material-icons"&gt;attachment&lt;/i&gt;
+        &lt;i class="material-icons"&gt;computer&lt;/i&gt;
+        &lt;i class="material-icons"&gt;traffic&lt;/i&gt;
+    -------------------------------------------------------------------------------------------------
+    CSS Links
+    =========
+        Styling Links
+            color: hotpink;
+            text-decoration: none;
+            text-decoration: underline;
+            background-color: yellow;
+            
+        The four links states are:
+        a:link - 	a normal, unvisited link
+        a:visited - a link the user has visited
+        a:hover - 	a link when the user mouses over it
+        a:active - 	a link the moment it is clicked
+        
+    /* unvisited link */
+    a:link {
+        color: red;
+    }
+    
+    /* visited link */
+    a:visited {
+        color: green;
+    }
+    
+    /* mouse over link */
+    a:hover {
+        color: hotpink;
+    }
+    
+    /* selected link */
+    a:active {
+        color: blue;
+    }
+    Note:-
+    -----
+    a:hover MUST come after a:link and a:visited
+    a:active MUST come after a:hover
+    Example
+    =======
+        a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center; 
+            text-decoration: none;
+            display: inline-block;
+        }
+    
+        a:hover, a:active {
+            background-color: red;
+        }
+    ------------------------------------------------------------------------------------------------
+    CSS Lists
+    =========
+    Different List Item Markers
+        list-style-type: circle;
+        list-style-type: square;
+        list-style-type: upper-roman;
+        list-style-type: lower-roman;
+        list-style-type: uper-alpha;
+        list-style-type: lower-alpha;
+    
+    An Image as The List Item Marker
+        list-style-image: url('sqpurple.gif');
+    
+    Position The List Item Markers
+        list-style-position: inside;
+        
+    List - Shorthand property
+        list-style: square inside url("sqpurple.gif");
+        
+    Styling List With Colors
+    ------------------------	
+    Example
+    ol {
+        background: #ff9999;
+        padding: 20px;
+    }
+    
+    ul {
+        background: #3399ff;
+        padding: 20px;
+    }
+    
+    ol li {
+        background: #ffe5e5;
+        padding: 5px;
+        margin-left: 35px;
+    }
+    
+    ul li {
+        background: #cce5ff;
+        margin: 5px;
+    }
+    ------------------------------------------------------------------------------------------------
+    CSS Tables
+    ==========
+    Table Borders
+        table, th, td {  border: 1px solid black;}
+    Collapse Table Borders
+        table { border-collapse: collapse;}
+        table, th, td { border: 1px solid black; }
+    Table Width and Height
+        table {width: 100%;}
+        th { height: 50px;}
+    Horizontal Alignment
+        text-align: left;
+        text-align: center;
+        text-align: right;
+    Vertical Alignment
+        vertical-align: top;
+        vertical-align: middle;
+        vertical-align: bottom;
+    Horizontal Dividers
+        th, td {   border-bottom: 1px solid #ddd;}
+    Hoverable Table
+        tr:hover {background-color: #f5f5f5}
+    Striped Tables
+        tr:nth-child(even) {background-color: #f2f2f2}
+        tr:nth-child(odd) {background-color: #f2f2f2}
+    Table Color
+        th {background-color: #4CAF50;color: white;}
+    Responsive Table
+        overflow-x:auto;
+    --------------------------------------------------------------------------------------------------
+    CSS Layout  
+    ==========
+    1.The display Property
+        display: none;
+        display: inline;
+        display: block;
+    2.The Visibility Property
+        visibility: hidden;
+        visibility: visible;
+    3.The position Property
+        static
+            position: static; border: 3px solid #73AD21;
+        relative
+            position: relative; left: 30px; border: 3px solid #73AD21;
+        fixed
+            position: fixed; bottom: 0; right: 0; width: 300px;border: 3px solid #73AD21;
+        absolute
+            div.relative {position: relative;width: 400px;height: 200px;border: 3px solid #73AD21;} 
+            div.absolute {position: absolute;top: 80px;right: 0;width: 200px;        	height:100px;border:3px solid #73AD21;}
+        
+        Overlapping Elements
+        z-index
+            img {position: absolute;left: 0px;top: 0px;z-index: -1;}
+    
+    4.The Overflow Property
+        overflow:visible;
+        overflow:hidden ;
+        overflow:scroll ;
+        overflow:auto ;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        overflow-y: scroll; /* Add vertical scrollbar */
+        
+    5.The Float and Clear
+    
+    The float property specifies whether or not an element should float.
+        float: right;
+        float: left;
+    The clear property is used to control the behavior of floating elements.
+        clear: left;
+        clear: right;
+    
+        overflow: auto;
+    6.The Inline-Block
+        display: inline-block;
+    
+    7.Horizontal &amp; Vertical Align
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+    -----------------------------------------------------------------------------------------------
+    CSS Combinators
+    ===============
+    descendant selector (space)
+        div p{background-color: yellow;}
+    child selector (&gt;)
+        div &gt; p {background-color: yellow;}
+    adjacent sibling selector (+)
+        div + p {background-color: yellow;}
+    general sibling selector (~)	
+        div ~ p {background-color: yellow;}
+    ------------------------------------------------------------------------------------------------
+    CSS Pseudo-classes
+    ==================
+        selector:pseudo-class { property:value;}
+        a:link {color: #FF0000;}
+        a:hover{color: #FF00FF;}
+        div:hover {background-color: blue;}
+        
+        Simple Tooltip Hover
+            p {    display: none;    background-color: yellow;    padding: 20px;}
+            div:hover p {    display: block;}
+        
+    CSS - The :first-child Pseudo-class
+    -----------------------------------
+        p:first-child {color: blue;}
+        p i:first-child {color: blue;}	
+        p:first-child i {color: blue;}
+        
+    CSS - The :lang Pseudo-class
+    -----------------------------
+    The :lang pseudo-class allows you to define special rules for different languages.
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+    q:lang(no) {
+        quotes: "~" "~";
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+    &lt;p&gt;Some text &lt;q lang="no"&gt;A quote in a paragraph&lt;/q&gt; Some text.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    -------------------------------------------------------------------------------------------------
+    CSS Pseudo-elements
+    ===================
+    selector::pseudo-element {
+        property:value;
+    }
+    
+    The ::first-line Pseudo-element
+        p::first-line {
+            color: #ff0000;
+            font-variant: small-caps;}
+    The following properties apply to the ::first-line pseudo-element:
+    1.font properties
+    2.color properties
+    3.background properties
+    4.word-spacing
+    5.letter-spacing
+    6.text-decoration
+    7.vertical-align
+    8.text-transform
+    9.line-height
+    10.clear
+    
+    The ::first-letter Pseudo-element
+        p::first-letter {
+            color: #ff0000;
+            font-size: xx-large;}
+    
+    Pseudo-elements and CSS Classes
+        p.intro::first-letter {
+           color: #ff0000;
+        font-size:200%;}
+    
+    Multiple Pseudo-elements
+        p::first-letter {
+            color: #ff0000;
+            font-size: xx-large;}
+    
+        p::first-line {
+            color: #0000ff;
+            font-variant: small-caps;}
+    
+    CSS - The ::before Pseudo-element
+        h1::before { content: url(smiley.gif);}
+    CSS - The ::after Pseudo-element
+        h1::after { content: url(smiley.gif);}
+    
+    CSS - The ::selection Pseudo-element
+          The following CSS properties can be applied to ::selection: color, background, cursor, and outline.
+        ::selection {
+            color: red; 
+            background: yellow;}
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    CSS Opacity / Transparency
+    ======================
+        The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent:
+        filter:alpha(opacity=x)
+    Example1
+        img {
+            opacity: 0.5;
+            filter: alpha(opacity=50); /* For IE8 and earlier */}
+    Example2
+        img {
+            opacity: 0.5;
+            filter: alpha(opacity=50); /* For IE8 and earlier */}
+    
+        img:hover {
+            opacity: 1.0;
+            filter: alpha(opacity=100); /* For IE8 and earlier */}
+    
+    Transparency using RGBA
+    -----------------------------------------
+        background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */
+    ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    CSS Navigation Bar
+    ===============
+        list-style-type: none; - Removes the bullets. A navigation bar does not need list markers
+        Set margin: 0; and padding: 0; to remove browser default settings
+    Vertical Navigation Bar
+        li a {    display: block;    width: 60px;}
+    Right-Align Links
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+          &lt;li style="float:right"&gt;&lt;a class="active" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    Fixed Navigation Bar
+        ul {list-style-type: none;    margin: 0;    padding: 0;    overflow: hidden;    background-color: #333;    position: fixed;    top: 0;    width: 100%;}
+        li {float: left;}
+        li a {display: block;    color: white;    text-align: center;    padding: 14px 16px;    text-decoration: none;}
+        li a:hover:not(.active) {    background-color: #111;}
+        .active {    background-color: #4CAF50;}
+    
+        &lt;ul&gt;&lt;li&gt;&lt;a class="active" href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;	&lt;/ul&gt;
+    --------------------------------------------------------------------------------------------------
+    CSS Dropdowns
+    =============
+                &lt;style&gt;
+                .dropbtn {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 16px;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                }
+    
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+    
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                }
+    
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+    
+                .dropdown-content a:hover {background-color: #f1f1f1}
+    
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+    
+                .dropdown:hover .dropbtn {
+                    background-color: #3e8e41;
+                }
+                &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+    
+                &lt;h2&gt;Dropdown Menu&lt;/h2&gt;
+                &lt;p&gt;Move the mouse over the button to open the dropdown menu.&lt;/p&gt;
+    
+                &lt;div class="dropdown"&gt;
+                  &lt;button class="dropbtn"&gt;Dropdown&lt;/button&gt;
+                  &lt;div class="dropdown-content"&gt;
+                    &lt;a href="#"&gt;Link 1&lt;/a&gt;
+                    &lt;a href="#"&gt;Link 2&lt;/a&gt;
+                    &lt;a href="#"&gt;Link 3&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+    
+                &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; We use href="#" for test links. In a real web site this would be URLs.&lt;/p&gt;
+    
+                &lt;/body&gt;
+                
+    Right-aligned Dropdown Content
+    ------------------------------
+                    .dropdown-content {    right: 0;}
+    -------------------------------------------------------------------------------------------------------------------------------------------
+    CSS Attribute Selectors
+    =======================
+            a[target] {    background-color: yellow; }
+            a[target="_blank"] {     background-color: yellow;}
+            [title~="flower"] {    border: 5px solid yellow;}
+            [class|="top"] {    background: yellow;}
+            [class^="top"] {    background: yellow;}
+            [class$="test"] {    background: yellow;}
+            [class*="te"] {	background: yellow;}
+    -------------------------------------------------------------------------------------------------------------------------------------------
+    CSS Forms
+    =========
+            input[type=text] {
+                background-color: white;
+                background-image: url('searchicon.png');
+                background-position: 10px 10px; 
+                background-repeat: no-repeat;
+                padding-left: 40px;}
+    Animated Search Input
+            input[type=text] {    
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;}
+    
+            input[type=text]:focus {		width: 100%;}
+    Styling Textareas
+            textarea {    width: 100%;    height: 150px;    padding: 12px 20px;    box-sizing: border-box;    border: 2px solid #ccc;   border-radius: 4px;    background-color: #f8f8f8;    resize: none;}
+            
+    Styling Input Buttons
+            input[type=button], input[type=submit], input[type=reset] {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;}
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+    CSS Counters
+    ============
+    CSS Counter Properties
+            Property			Description
+            content				Used with the ::before and ::after pseudo-elements, to insert generated content
+            counter-increment	Increments one or more counter values
+            counter-reset		Creates or resets one or more counters
+        
+        body {    counter-reset: section;}
+        h2::before {    counter-increment: section;    content: "Section " counter(section) ": ";}
+            </pre></body>
+            </html>
